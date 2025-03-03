@@ -1,0 +1,103 @@
+body {
+    font-family: 'Frank Ruhl Libre', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  header {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: 'Phosphate', cursive;
+    color: #F39C12;
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-family: 'Phosphate', cursive;
+    color: #F39C12;
+    font-size: 1.5em;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: #F39C12;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #e08e00;
+  }
+  
+  nav button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    border: none;
+    background: #F39C12;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  nav button:hover {
+    background: #e08e00;
+  }
+  
+  .language-selector {
+    margin-left: 30px;
+  }
+  
+  .social-media-bottom {
+    display: flex;
+    justify-content: center; /* Centrar los iconos */
+    margin-top: 30px; /* Espaciado superior */
+  }
+  
+  .social-media-bottom a {
+    color: #F39C12;
+    margin: 0 15px;
+    font-size: 2em; /* Tamaño de los iconos */
+    transition: color 0.3s;
+  }
+  
+  .social-media-bottom a:hover {
+    color: #fff; /* Cambiar color a blanco al pasar el mouse */
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer a {
+    color: #fff;
+  }
+  
