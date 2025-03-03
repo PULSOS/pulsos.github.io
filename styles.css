@@ -112,11 +112,19 @@ h2 {
 .social-media a {
   color: #F39C12;
   margin: 0 10px;
-  font-size: 25px;
+  font-size: 40px;
   text-decoration: none;
 }
 
 .social-media a:hover {
+  color: white;
+}
+
+.social-media i {
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover i {
   color: white;
 }
 

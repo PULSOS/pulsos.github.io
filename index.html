@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PULSOS - Encuentro Internacional de Artes Escénicas</title>
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Phosphate&family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PULSOS - Encuentro Internacional de Artes Escénicas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Phosphate&family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+  <!-- Agregamos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
 <header>
   <h1>PULSOS</h1>
-  <p class="subheader">Encuentro Internacional de Artes Escénicas</p>
+  <p class="subheader" data-es="Encuentro Internacional de Artes Escénicas" data-en="International Performing Arts Gathering"></p>
   <nav>
     <ul>
       <li><a href="index.html">INICIO</a></li>
@@ -18,7 +20,7 @@
       <li><a href="contacto.html">CONTACTO</a></li>
     </ul>
     <div class="language-select">
-      <button class="lang-btn">Idioma</button>
+      <button class="lang-btn">IDIOMA</button>
       <div class="dropdown-content">
         <a href="#" onclick="switchLanguage('es')">Español</a>
         <a href="#" onclick="switchLanguage('en')">English</a>
@@ -29,20 +31,22 @@
 
 <main>
   <section id="description">
-    <h2>Descripción</h2>
-    <p>Este encuentro se centra en la necesidad de fortalecer la presencia boliviana en las artes escénicas.</p>
+    <h2 data-es="Descripción" data-en="Description"></h2>
+    <p data-es="Este encuentro se centra en la necesidad de fortalecer la presencia boliviana en las artes escénicas."
+       data-en="This meeting focuses on strengthening Bolivia's presence in performing arts."></p>
   </section>
 
   <section id="mission">
-    <h2>Misión</h2>
-    <p>Conectar artistas bolivianos locales con la escena internacional.</p>
+    <h2 data-es="Misión" data-en="Mission"></h2>
+    <p data-es="Conectar artistas bolivianos locales con la escena internacional."
+       data-en="Connecting local Bolivian artists with the international scene."></p>
   </section>
 </main>
 
 <footer>
   <div class="social-media">
-    <a href="#" class="facebook-icon">Facebook</a>
-    <a href="#" class="instagram-icon">Instagram</a>
+    <a href="#" class="facebook-icon"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="instagram-icon"><i class="fab fa-instagram"></i></a>
   </div>
   <p>&copy; 2025 PULSOS. Todos los derechos reservados.</p>
 </footer>
