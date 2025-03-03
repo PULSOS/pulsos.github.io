@@ -93,6 +93,14 @@ nav ul li a:hover {
   background-color: #ffffff;
 }
 
+/* Agregar un poco de espacio en el contenedor principal */
+main {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Puedes agregar más estilos aquí según tus necesidades */
+
 /* Estilos para los iconos */
 .social-media {
   text-align: center;
