@@ -1,21 +1,21 @@
-// Función para cambiar el idioma de la página
+// Cambiar idioma
 function toggleLanguage() {
   let currentLanguage = document.documentElement.lang;
 
   if (currentLanguage === "es") {
     // Cambiar a inglés
     document.documentElement.lang = "en";
-    document.getElementById("language-btn").textContent = "ESPAÑOL"; // Cambiar el botón a español
+    document.getElementById("language-btn").textContent = "ESPAÑOL";
     switchContentLanguage("en");
   } else {
     // Cambiar a español
     document.documentElement.lang = "es";
-    document.getElementById("language-btn").textContent = "ENGLISH"; // Cambiar el botón a inglés
+    document.getElementById("language-btn").textContent = "ENGLISH";
     switchContentLanguage("es");
   }
 }
 
-// Función para cambiar el contenido según el idioma seleccionado
+// Cambiar contenido dependiendo del idioma
 function switchContentLanguage(language) {
   const elements = document.querySelectorAll('[data-es], [data-en]');
   elements.forEach(function(element) {
@@ -27,11 +27,13 @@ function switchContentLanguage(language) {
   });
 }
 
-// Detectar el idioma al cargar la página y ajustar el botón
+// Detectar el idioma predeterminado al cargar la página y ajustar el botón
 document.addEventListener("DOMContentLoaded", function() {
-  let currentLanguage = document.documentElement.lang || "es"; // Si no está definido, default a español
+  let currentLanguage = document.documentElement.lang || "es"; // Predeterminado a español
   if (currentLanguage === "en") {
     document.getElementById("language-btn").textContent = "ESPAÑOL";
     switchContentLanguage("en");
+  } else {
+    switchContentLanguage("es");
   }
 });

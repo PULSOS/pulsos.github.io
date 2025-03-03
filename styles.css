@@ -1,140 +1,58 @@
-/* Estilo general */
+/* Estilos generales */
 body {
   font-family: 'Frank Ruhl Libre', serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #000;
-  color: #fff;
+  color: #333;
 }
 
-/* Encabezado */
-header {
-  background: #000;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+h1, h2 {
+  font-family: 'Phosphate', sans-serif;
 }
 
-h1 {
-  font-family: 'Phosphate', cursive;
-  color: #F39C12;
-  font-size: 60px;
-}
-
-.subheader {
-  font-family: 'Phosphate', cursive;
-  color: #F39C12;
-  font-size: 25px;
-}
-
-/* Navegación */
+/* Barra de navegación */
 nav ul {
-  list-style: none;
+  display: flex;
+  justify-content: flex-end;
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav a {
-  color: #F39C12;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Phosphate', cursive;
-  font-size: 20px;
-}
-
-nav a:hover {
-  color: white;
-}
-
-.language-select {
-  display: inline-block;
-  position: relative;
+  margin-left: 20px;
 }
 
 .lang-btn {
-  background-color: #F39C12;
+  background-color: yellow;
   border: none;
-  color: white;
-  padding: 10px;
+  padding: 10px 20px;
   cursor: pointer;
 }
 
 .lang-btn:hover {
-  background-color: #e08e00;
+  background-color: #f1c40f;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #F39C12;
-  min-width: 160px;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 10px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #e08e00;
-  color: white;
-}
-
-.language-select:hover .dropdown-content {
-  display: block;
-}
-
-/* Estilo de las secciones */
-main {
-  padding: 20px;
-}
-
-h2 {
-  font-family: 'Phosphate', cursive;
-  color: #F39C12;
-  font-size: 30px;
-}
-
-/* Iconos de redes sociales */
+/* Estilos para los iconos */
 .social-media {
   text-align: center;
-  margin: 20px 0;
+  margin-top: 20px;
 }
 
 .social-media a {
-  color: #F39C12;
+  font-size: 30px;
   margin: 0 10px;
-  font-size: 40px;
-  text-decoration: none;
+  color: #333;
 }
 
 .social-media a:hover {
   color: white;
 }
 
-.social-media i {
-  transition: color 0.3s ease;
-}
-
-.social-media a:hover i {
-  color: white;
-}
-
-/* Footer */
 footer {
-  background: #000;
-  color: #fff;
   text-align: center;
-  padding: 10px 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  margin-top: 20px;
+}
+
+footer p {
+  color: #777;
 }
