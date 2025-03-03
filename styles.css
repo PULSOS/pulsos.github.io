@@ -1,17 +1,66 @@
-/* Estilos generales */
+/* Estilo general */
 body {
   font-family: 'Frank Ruhl Libre', serif;
-  color: #333;
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
 }
 
-h1, h2 {
+/* Estilo general para el header */
+header {
+  text-align: center;
+  padding-bottom: 30px; /* Espacio entre el header y la línea horizontal */
+}
+
+/* Ajustar el margen entre el título (PULSOS) y la subcabecera (Encuentro Internacional) */
+h1 {
+  margin-bottom: 10px; /* Menos espacio entre el título y la subcabecera */
+}
+
+/* Ajustar el margen entre la subcabecera y la barra de navegación */
+.subheader {
+  margin-bottom: 30px; /* Aumentar espacio entre la subcabecera y la barra de navegación */
+}
+
+/* Línea horizontal para separar el header del body */
+hr {
+  border: 0;
+  border-top: 2px solid #F39C12; /* Línea del mismo color que las letras */
+  width: 80%; /* Ajusta el ancho de la línea */
+  margin: 20px auto; /* Centra la línea horizontal */
+}
+
+h1 {
   font-family: 'Phosphate', sans-serif;
+  font-size: 100px; /* Tamaño de letra grande para PULSOS */
+  color: #F39C12; /* Título amarillo */
+  text-align: center;
 }
 
+h2 {
+  font-family: 'Phosphate', sans-serif;
+  font-size: 30px; /* Letra más pequeña para Encuentro Internacional */
+  color: #F39C12; /* Color amarillo */
+}
+
+.subheader {
+  font-family: 'Phosphate', sans-serif;
+  font-size: 30px; /* Letra más pequeña para Encuentro Internacional */
+  color: #F39C12; /* Color amarillo */
+  text-align: center;
+}
+hr {
+  border: 0;
+  border-top: 2px solid #F39C12; /* Línea del mismo color que las letras */
+  width: 80%; /* Ajusta el ancho de la línea */
+  margin: 20px auto; /* Centra la línea horizontal */
+}
 /* Barra de navegación */
 nav ul {
+  font-family: 'Phosphate', sans-serif;
+  font-size: 30px;
+  color: #F39C12; /* Color amarillo por defecto */
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -21,15 +70,27 @@ nav ul li {
   margin-left: 20px;
 }
 
+nav ul li a {
+  color: #F39C12; /* Color amarillo por defecto */
+  text-decoration: none; /* Elimina el subrayado en los enlaces */
+  transition: color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+nav ul li a:hover {
+  color: #ffffff; /* Cambia a blanco cuando el mouse pasa sobre el enlace */
+}
 .lang-btn {
-  background-color: yellow;
+  position: fixed;
+  top: 20px; /* Ajusta la distancia desde el borde superior */
+  right: 20px; /* Ajusta la distancia desde el borde derecho */
+  background-color: #F39C12;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
 }
 
 .lang-btn:hover {
-  background-color: #f1c40f;
+  background-color: #ffffff;
 }
 
 /* Estilos para los iconos */
@@ -41,13 +102,14 @@ nav ul li {
 .social-media a {
   font-size: 30px;
   margin: 0 10px;
-  color: #333;
+  color: #F39C12;
 }
 
 .social-media a:hover {
-  color: white;
+  color: #ffffff; /* Íconos en blanco al pasar el mouse */
 }
 
+/* Pie de página */
 footer {
   text-align: center;
   margin-top: 20px;
