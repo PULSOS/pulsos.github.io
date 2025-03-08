@@ -153,8 +153,8 @@ footer p {
     left: -250px;
     width: 250px;
     height: 100%;
-    background: black;
-    color: #FFC300;
+    background: #FFC300;
+    color: white;
     transition: left 0.3s ease;
     padding-top: 60px;
     z-index: 1000;
