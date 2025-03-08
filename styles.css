@@ -1,13 +1,18 @@
+
+/* Importar y aplicar la fuente Phosphate desde un archivo local */
 @font-face {
   font-family: 'Phosphate-inline';
-  src: url('fonts/Phosphate-inline.ttf') format('truetype');
+  src: url('fonts/Phosphate-inline.woff') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
+/* Importar y aplicar la fuente Oswald desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+
 /* Estilo general */
 body {
-  font-family: 'Frank Ruhl Libre', serif;
+  font-family: 'Oswald', serif;
   background-color: #000; /* Fondo negro */
   color: #fff; /* Texto blanco */
 }
