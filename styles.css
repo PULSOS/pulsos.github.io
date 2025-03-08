@@ -24,7 +24,7 @@ h1 {
 /* Línea horizontal para separar el header del body */
 hr {
   border: 0;
-  border-top: 2px solid #D29E00; /* Línea del mismo color que las letras */
+  border-top: 2px solid #FFC300; /* Línea del mismo color que las letras */
   width: 80%; /* Ajusta el ancho de la línea */
   margin: 20px auto; /* Centra la línea horizontal */
 }
@@ -32,20 +32,20 @@ hr {
 h1 {
   font-family: 'Phosphate', sans-serif;
   font-size: 100px; /* Tamaño de letra grande para PULSOS */
-  color: #D29E00; /* Título amarillo */
+  color: #FFC300; /* Título amarillo */
   text-align: center;
 }
 
 h2 {
   font-family: 'Phosphate', sans-serif;
   font-size: 30px; /* Letra más pequeña para Encuentro Internacional */
-  color: #D29E00; /* Color amarillo */
+  color: #FFC300; /* Color amarillo */
 }
 
 .subheader {
   font-family: 'Phosphate', sans-serif;
   font-size: 30px; /* Letra más pequeña para Encuentro Internacional */
-  color: #D29E00; /* Color amarillo */
+  color: #FFC300; /* Color amarillo */
   text-align: center;
 }
 hr {
@@ -58,7 +58,7 @@ hr {
 nav ul {
   font-family: 'Phosphate', sans-serif;
   font-size: 30px;
-  color: #D29E00; /* Color amarillo por defecto */
+  color: #FFC300; /* Color amarillo por defecto */
   display: flex;
   justify-content: center;
   padding: 0;
@@ -71,7 +71,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #D29E00; /* Color amarillo por defecto */
+  color: #FFC300; /* Color amarillo por defecto */
   text-decoration: none; /* Elimina el subrayado en los enlaces */
   transition: color 0.3s ease; /* Transición suave al cambiar de color */
 }
@@ -83,7 +83,7 @@ nav ul li a:hover {
   position: fixed;
   top: 20px; /* Mantiene el botón a 20px de distancia desde el borde superior */
   right: 20px; /* Mantiene el botón a 20px de distancia desde el borde derecho */
-  background-color: #D29E00;
+  background-color: #FFC300;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -110,7 +110,7 @@ main {
 .social-media a {
   font-size: 30px;
   margin: 0 10px;
-  color: #D29E00;
+  color: #FFC300;
 }
 
 .social-media a:hover {
