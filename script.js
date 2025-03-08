@@ -63,15 +63,20 @@ document.addEventListener("DOMContentLoaded", function () {
           }
       });
   }
-    // Asegurar que el menú lateral tenga las opciones correctas
-    const sidebarNav = sidebar.querySelector("nav");
-    if (sidebarNav) {
-        sidebarNav.innerHTML = `
-            <ul>
-                <li><a href="index.html" data-es="INICIO" data-en="HOME">INICIO</a></li>
-                <li><a href="edicion2025.html" data-es="EDICIÓN 2025" data-en="EDITION 2025">EDICIÓN 2025</a></li>
-                <li><a href="contacto.html" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a></li>
-            </ul>
-        `;
+    // Crear el menú lateral si no existe
+    let sidebarNav = sidebar.querySelector("nav");
+    if (!sidebarNav) {
+        sidebarNav = document.createElement("nav");
+        sidebar.appendChild(sidebarNav);
     }
+
+    // Asegurar que el menú lateral tenga las opciones correctas
+    sidebarNav.innerHTML = `
+        <ul>
+            <li><a href="index.html" data-es="INICIO" data-en="HOME">INICIO</a></li>
+            <li><a href="edicion2025.html" data-es="EDICIÓN 2025" data-en="EDITION 2025">EDICIÓN 2025</a></li>
+            <li><a href="contacto.html" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a></li>
+        </ul>
+    `;
 });
+
