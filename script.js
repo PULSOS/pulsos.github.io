@@ -1,9 +1,10 @@
-// Mejorado para rendimiento en dispositivos móviles con menú lateral
+// Mejorado para rendimiento en dispositivos móviles con menú lateral solo en móviles
 
 document.addEventListener("DOMContentLoaded", () => {
   const languageBtn = document.getElementById("language-btn");
   const menuToggle = document.getElementById("menu-toggle");
   const sidebar = document.getElementById("sidebar");
+  const closeMenuBtn = document.getElementById("close-menu");
   const currentLanguage = localStorage.getItem("language") || "es";
   
   // Aplicar idioma guardado
@@ -15,10 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
     setLanguage(newLanguage);
   });
 
-  // Manejar menú lateral
-  menuToggle.addEventListener("click", () => {
-    sidebar.classList.toggle("open");
-  });
+  // Solo activar el menú lateral en móviles
+  if (window.innerWidth <= 767) {
+    menuToggle.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+    });
+
+    closeMenuBtn.addEventListener("click", () => {
+      sidebar.classList.remove("open");
+    });
+  }
 });
 
 function setLanguage(language) {

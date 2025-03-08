@@ -126,3 +126,86 @@ footer {
 footer p {
   color: #777;
 }
+
+/* ========================= */
+/* Menú lateral solo en móviles */
+/* ========================= */
+
+/* Ocultar el menú lateral en pantallas grandes */
+@media (min-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .menu-btn {
+    display: none;
+  }
+}
+
+/* Mostrar el menú lateral en móviles */
+@media (max-width: 767px) {
+  .sidebar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculto inicialmente */
+    width: 250px;
+    height: 100%;
+    background: black;
+    color: white;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .menu-btn {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Ajustar el nav dentro del menú */
+  .sidebar nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .sidebar nav ul li {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .sidebar nav ul li a:hover {
+    color: #FFC300;
+  }
+}
