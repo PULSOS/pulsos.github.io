@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Phosphate';
-  src: url('fonts/Phosphate.ttf') format('truetype');
+  font-family: 'Phosphate-inline';
+  src: url('fonts/Phosphate-inline.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -37,20 +37,20 @@ hr {
 }
 
 h1 {
-  font-family: 'Phosphate', sans-serif;
+  font-family: 'Phosphate-inline', sans-serif;
   font-size: 100px; /* Tamaño de letra grande para PULSOS */
   color: #FFC300; /* Título amarillo */
   text-align: center;
 }
 
 h2 {
-  font-family: 'Phosphate', sans-serif;
+  font-family: 'Phosphate-inline', sans-serif;
   font-size: 30px; /* Letra más pequeña para Encuentro Internacional */
   color: #FFC300; /* Color amarillo */
 }
 
 .subheader {
-  font-family: 'Phosphate', sans-serif;
+  font-family: 'Phosphate-inline', sans-serif;
   font-size: 30px; /* Letra más pequeña para Encuentro Internacional */
   color: #FFC300; /* Color amarillo */
   text-align: center;
@@ -63,7 +63,7 @@ hr {
 }
 /* Barra de navegación */
 nav ul {
-  font-family: 'Phosphate', sans-serif;
+  font-family: 'Phosphate-inline', sans-serif;
   font-size: 30px;
   color: #FFC300; /* Color amarillo por defecto */
   display: flex;
