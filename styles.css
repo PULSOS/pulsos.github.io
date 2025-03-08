@@ -213,6 +213,16 @@ footer p {
 
   /* Ocultar barra de navegación en móviles */
   nav {
-    display: none;
+    display: none !important;
+  }
+}
+
+/* Mostrar solo la barra de navegación en escritorio y ocultar el menú lateral */
+@media (min-width: 768px) {
+  nav {
+    display: block !important;
+  }
+  .menu-btn, .sidebar, .close-btn {
+    display: none !important;
   }
 }
