@@ -63,20 +63,20 @@ document.addEventListener("DOMContentLoaded", function () {
           }
       });
   }
-    // Crear el menú lateral si no existe
-    let sidebarNav = sidebar.querySelector("nav");
-    if (!sidebarNav) {
-        sidebarNav = document.createElement("nav");
-        sidebar.appendChild(sidebarNav);
-    }
-
-    // Asegurar que el menú lateral tenga las opciones correctas
-    sidebarNav.innerHTML = `
-        <ul>
-            <li><a href="index.html" data-es="INICIO" data-en="HOME">INICIO</a></li>
-            <li><a href="edicion2025.html" data-es="EDICIÓN 2025" data-en="EDITION 2025">EDICIÓN 2025</a></li>
-            <li><a href="contacto.html" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a></li>
-        </ul>
-    `;
-});
+        // Verificar si ya existe el `nav` dentro del sidebar
+        let sidebarNav = sidebar.querySelector("nav");
+        if (!sidebarNav) {
+            sidebarNav = document.createElement("nav");
+            sidebar.appendChild(sidebarNav);
+        }
+    
+        // Asegurar que el menú lateral tenga las opciones correctas
+        sidebarNav.innerHTML = `
+            <ul style="list-style: none; padding: 0; text-align: center;">
+                <li style="margin: 15px 0;"><a href="index.html" style="color: white; text-decoration: none; font-size: 20px;">INICIO</a></li>
+                <li style="margin: 15px 0;"><a href="edicion2025.html" style="color: white; text-decoration: none; font-size: 20px;">EDICIÓN 2025</a></li>
+                <li style="margin: 15px 0;"><a href="contacto.html" style="color: white; text-decoration: none; font-size: 20px;">CONTACTO</a></li>
+            </ul>
+        `;
+    });
 
