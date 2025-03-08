@@ -40,25 +40,27 @@ function setLanguage(language) {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.getElementById("menu-toggle");
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.getElementById("menu-toggle");
   const sidebar = document.getElementById("sidebar");
-  const closeMenu = document.getElementById("close-menu");
+  const closeBtn = document.getElementById("close-menu");
 
-  if (menuToggle && sidebar && closeMenu) {
-    menuToggle.addEventListener("click", () => {
-      sidebar.classList.toggle("open");
-    });
+  if (menuBtn && sidebar && closeBtn) {
+      // Abrir menú lateral
+      menuBtn.addEventListener("click", function () {
+          sidebar.classList.add("open");
+      });
 
-    closeMenu.addEventListener("click", () => {
-      sidebar.classList.remove("open");
-    });
+      // Cerrar menú lateral
+      closeBtn.addEventListener("click", function () {
+          sidebar.classList.remove("open");
+      });
 
-    // Cerrar el menú si se hace clic fuera de él
-    document.addEventListener("click", (event) => {
-      if (!sidebar.contains(event.target) && !menuToggle.contains(event.target)) {
-        sidebar.classList.remove("open");
-      }
-    });
+      // Cerrar el menú si se hace clic fuera de él
+      document.addEventListener("click", function (event) {
+          if (!sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
+              sidebar.classList.remove("open");
+          }
+      });
   }
 });

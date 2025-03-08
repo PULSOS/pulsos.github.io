@@ -154,7 +154,7 @@ footer p {
     width: 250px;
     height: 100%;
     background: black;
-    color: white;
+    color: #FFC300;
     transition: left 0.3s ease;
     padding-top: 60px;
     z-index: 1000;
@@ -172,7 +172,7 @@ footer p {
     background: none;
     border: none;
     font-size: 24px;
-    color: white;
+    color: #FFC300;
     cursor: pointer;
     z-index: 1100;
   }
