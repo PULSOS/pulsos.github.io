@@ -43,14 +43,14 @@ hr {
 
 h1 {
   font-family: 'Phosphate-inline', sans-serif;
-  font-size: 100px; /* Tamaño de letra grande para PULSOS */
+  font-size: 300px; /* Tamaño de letra grande para PULSOS */
   color: #FFC300; /* Título amarillo */
   text-align: center;
 }
 
 h2 {
   font-family: 'Phosphate-inline', sans-serif;
-  font-size: 40px; /* Letra más pequeña para Encuentro Internacional */
+  font-size: 30px; /* Letra más pequeña para Encuentro Internacional */
   color: #FFC300; /* Color amarillo */
 }
 
