@@ -67,10 +67,14 @@ hr {
   margin: 20px auto; /* Centra la línea horizontal */
 }
 /* Barra de navegación */
+nav {
+  display: block;
+}
+
 nav ul {
   font-family: 'Phosphate-inline', sans-serif;
   font-size: 30px;
-  color: #FFC300; /* Color amarillo por defecto */
+  color: #FFC300;
   display: flex;
   justify-content: center;
   padding: 0;
@@ -83,14 +87,15 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #FFC300; /* Color amarillo por defecto */
-  text-decoration: none; /* Elimina el subrayado en los enlaces */
-  transition: color 0.3s ease; /* Transición suave al cambiar de color */
+  color: #FFC300;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #ffffff; /* Cambia a blanco cuando el mouse pasa sobre el enlace */
+  color: #ffffff;
 }
+
 .lang-btn {
   position: fixed;
   top: 20px; /* Mantiene el botón a 20px de distancia desde el borde superior */
@@ -139,27 +144,13 @@ footer p {
   color: #777;
 }
 
-/* ========================= */
 /* Menú lateral solo en móviles */
-/* ========================= */
-
-/* Ocultar el menú lateral en pantallas grandes */
-@media (min-width: 768px) {
-  .sidebar {
-    display: none;
-  }
-  .menu-btn {
-    display: none;
-  }
-}
-
-/* Mostrar el menú lateral en móviles */
 @media (max-width: 767px) {
   .sidebar {
     display: block;
     position: fixed;
     top: 0;
-    left: -250px; /* Oculto inicialmente */
+    left: -250px;
     width: 250px;
     height: 100%;
     background: black;
@@ -197,7 +188,6 @@ footer p {
     cursor: pointer;
   }
 
-  /* Ajustar el nav dentro del menú */
   .sidebar nav ul {
     display: flex;
     flex-direction: column;
@@ -219,5 +209,10 @@ footer p {
 
   .sidebar nav ul li a:hover {
     color: #FFC300;
+  }
+
+  /* Ocultar barra de navegación en móviles */
+  nav {
+    display: none;
   }
 }
