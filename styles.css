@@ -24,7 +24,7 @@ h1 {
 /* Línea horizontal para separar el header del body */
 hr {
   border: 0;
-  border-top: 2px solid #F39C12; /* Línea del mismo color que las letras */
+  border-top: 2px solid #ffffbf00; /* Línea del mismo color que las letras */
   width: 80%; /* Ajusta el ancho de la línea */
   margin: 20px auto; /* Centra la línea horizontal */
 }
@@ -32,7 +32,7 @@ hr {
 h1 {
   font-family: 'Phosphate', sans-serif;
   font-size: 100px; /* Tamaño de letra grande para PULSOS */
-  color: #F39C12; /* Título amarillo */
+  color: #ffffbf00; /* Título amarillo */
   text-align: center;
 }
 
@@ -81,8 +81,8 @@ nav ul li a:hover {
 }
 .lang-btn {
   position: fixed;
-  top: 20px; /* Ajusta la distancia desde el borde superior */
-  right: 20px; /* Ajusta la distancia desde el borde derecho */
+  top: 20px; /* Mantiene el botón a 20px de distancia desde el borde superior */
+  right: 20px; /* Mantiene el botón a 20px de distancia desde el borde derecho */
   background-color: #F39C12;
   border: none;
   padding: 10px 20px;
