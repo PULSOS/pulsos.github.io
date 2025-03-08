@@ -37,3 +37,28 @@ function setLanguage(language) {
     element.textContent = element.getAttribute(`data-${language}`);
   });
 }
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("menu-toggle");
+  const sidebar = document.getElementById("sidebar");
+  const closeMenu = document.getElementById("close-menu");
+
+  if (menuToggle && sidebar && closeMenu) {
+    menuToggle.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+    });
+
+    closeMenu.addEventListener("click", () => {
+      sidebar.classList.remove("open");
+    });
+
+    // Cerrar el menú si se hace clic fuera de él
+    document.addEventListener("click", (event) => {
+      if (!sidebar.contains(event.target) && !menuToggle.contains(event.target)) {
+        sidebar.classList.remove("open");
+      }
+    });
+  }
+});
