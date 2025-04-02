@@ -1,5 +1,6 @@
-// Obtén el botón de cambio de idioma
+// Obtén el botón de cambio de idioma y la imagen del título
 const btnCambiarIdioma = document.getElementById("btn-cambiar-idioma");
+const titulo = document.getElementById("titulo");
 
 // Función para cambiar el idioma
 function cambiarIdioma() {
@@ -11,17 +12,12 @@ function cambiarIdioma() {
         // Cambiar al inglés
         document.documentElement.lang = "en";
 
+        // Cambiar la imagen del título a la versión en inglés
+        titulo.src = "titulo-en.png";
+
         // Ocultar el texto en español y mostrar el texto en inglés
-        document.getElementById("subtitulo-es").style.display = "none";
-        document.getElementById("subtitulo-en").style.display = "block";
-
-        document.getElementById("proximamente-es").style.display = "none";
-        document.getElementById("fecha-es").style.display = "none";
-        document.getElementById("lugar-es").style.display = "none";
-
-        document.getElementById("proximamente-en").style.display = "block";
-        document.getElementById("fecha-en").style.display = "block";
-        document.getElementById("lugar-en").style.display = "block";
+        document.getElementById("section-es").style.display = "none";
+        document.getElementById("section-en").style.display = "block";
 
         // Cambiar el texto del botón a Español
         btnCambiarIdioma.innerText = "ESPAÑOL"; 
@@ -29,20 +25,15 @@ function cambiarIdioma() {
         // Cambiar al español
         document.documentElement.lang = "es";
 
+        // Cambiar la imagen del título a la versión en español
+        titulo.src = "titulo.png";
+
         // Ocultar el texto en inglés y mostrar el texto en español
-        document.getElementById("subtitulo-es").style.display = "block";
-        document.getElementById("subtitulo-en").style.display = "none";
-
-        document.getElementById("proximamente-es").style.display = "block";
-        document.getElementById("fecha-es").style.display = "block";
-        document.getElementById("lugar-es").style.display = "block";
-
-        document.getElementById("proximamente-en").style.display = "none";
-        document.getElementById("fecha-en").style.display = "none";
-        document.getElementById("lugar-en").style.display = "none";
+        document.getElementById("section-en").style.display = "none";
+        document.getElementById("section-es").style.display = "block";
 
         // Cambiar el texto del botón a Inglés
-        btnCambiarIdioma.innerText = "INGLÉS"; 
+        btnCambiarIdioma.innerText = "ENGLISH"; 
     }
 }
 

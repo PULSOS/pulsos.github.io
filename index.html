@@ -8,31 +8,36 @@
 </head>
 <body>
     <div class="background">
-        <!-- Título de la página (imagen PNG) -->
+        <!-- Título de la página (imagen PNG) que cambia según el idioma -->
         <img id="titulo" src="titulo.png" alt="Título del Evento">
 
-        <!-- Subtítulo en español -->
-        <h2 id="subtitulo-es" class="subtitulo">ENCUENTRO INTERNACIONAL DE ARTES ESCÉNICAS</h2>
-
-        <!-- Subtítulo en inglés (inicialmente oculto) -->
-        <h2 id="subtitulo-en" class="subtitulo" style="display: none;">INTERNATIONAL PERFORMING ARTS GATHERING</h2>
-
         <!-- Texto en español -->
-        <section>
+        <section id="section-es">
             <p id="proximamente-es" class="texto">PRÓXIMAMENTE</p>
-            <p id="fecha-es" class="texto">JUNIO 2025</p>
-            <p id="lugar-es" class="texto">LA PAZ - BOLIVIA</p>
+            <p id="fecha-es" class="texto">JUNIO.2025</p>
+            <p id="lugar-es" class="texto">LA PAZ.BOLIVIA</p>
         </section>
 
         <!-- Texto en inglés (inicialmente oculto) -->
-        <section style="display: none;" id="section-en">
+        <section id="section-en" style="display: none;">
             <p id="proximamente-en" class="texto">COMING SOON</p>
-            <p id="fecha-en" class="texto">JUNE 2025</p>
-            <p id="lugar-en" class="texto">LA PAZ - BOLIVIA</p>
+            <p id="fecha-en" class="texto">JUNE.2025</p>
+            <p id="lugar-en" class="texto">LA PAZ.BOLIVIA</p>
         </section>
 
         <!-- Botón para cambiar el idioma -->
-        <button id="btn-cambiar-idioma">INGLÉS</button>
+        <button id="btn-cambiar-idioma">ENGLISH</button>
+
+        <!-- Botones de redes sociales usando íconos de FontAwesome -->
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/pulsos.encuentro" target="_blank" class="social-icon facebook">
+                <i class="fab fa-facebook"></i> <!-- Ícono de Facebook -->
+            </a>
+            <a href="https://www.instagram.com/pulsos.encuentro" target="_blank" class="social-icon instagram">
+                <i class="fab fa-instagram"></i> <!-- Ícono de Instagram -->
+            </a>
+        </div>
+
     </div>
 
     <script src="script.js"></script>
