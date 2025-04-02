@@ -1,0 +1,55 @@
+1body {
+2    font-family: 'Edinburgh', sans-serif;
+3    margin: 0;
+4    padding: 0;
+5    background-image: url('fondo-textura.png'); /* Cambia esto por el nombre de tu archivo de fondo */
+6    background-size: cover;
+7    color: yellow; /* Color de las letras */
+8    text-align: center;
+9}
+10
+11header {
+12    padding: 20px;
+13}
+14
+15.logo {
+16    max-width: 200px; /* Ajusta el tamaño del logo según sea necesario */
+17}
+18
+19h1 {
+20    font-size: 3em;
+21}
+22
+23h2 {
+24    font-size: 1.5em;
+25}
+26
+27main {
+28    padding: 50px 20px;
+29}
+30
+31h3, h4 {
+32    font-size: 2em;
+33}
+34
+35button {
+36    padding: 10px 20px;
+37    background-color: transparent;
+38    color: yellow;
+39    border: 2px solid yellow;
+40    border-radius: 5px;
+41    cursor: pointer;
+42    font-size: 1em;
+43}
+44
+45button:hover {
+46    background-color: yellow;
+47    color: black;
+48}
+49
+50footer {
+51    text-align: center;
+52    padding: 10px 0;
+53    background: rgba(0, 0, 0, 0.5);
+54    color: yellow;
+55}
