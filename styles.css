@@ -1,0 +1,69 @@
+/* Estilo global para el fondo negro */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fondo de la página, usando una imagen PNG */
+.background {
+    background-image: url('fondo.png'); /* Asegúrate de tener el archivo 'fondo.png' en la misma carpeta */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Título de la página (imagen PNG) */
+#titulo {
+    max-width: 80%; /* Ajusta según sea necesario */
+    height: auto;
+}
+
+/* Estilo para el texto debajo del título */
+#subtitulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: yellow;
+    margin-top: 20px;
+}
+
+/* Estilos para los textos en la sección principal */
+section p {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+/* Estilo específico para el texto "Próximamente", "Fecha" y "Lugar" */
+#proximamente, #fecha, #lugar {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Botón para cambiar el idioma */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: #e0c200;
+}
