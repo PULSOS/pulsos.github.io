@@ -4,7 +4,7 @@
     src: url('EdinguDemo.otf') format('opentype');
 }
 
-/* Estilo global para el fondo negro */
+/* Estilos globales para el cuerpo de la página */
 body {
     margin: 0;
     padding: 0;
@@ -13,12 +13,13 @@ body {
     font-family: 'EdinguDemo', sans-serif;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    text-align: center; /* Asegura que todo el texto esté centrado */
+    flex-direction: column; /* Organiza los elementos de arriba a abajo */
 }
 
-/* Fondo de la página, usando una imagen PNG */
+/* Fondo de la página con la imagen PNG */
 .background {
     background-image: url('fondo.png'); /* Asegúrate de tener el archivo 'fondo.png' en la misma carpeta */
     background-size: cover;
@@ -26,25 +27,27 @@ body {
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-direction: column; /* Organiza los elementos de arriba a abajo */
+    text-align: center; /* Asegura que todo el texto esté centrado */
 }
 
 /* Título de la página (imagen PNG) */
 #titulo {
     max-width: 90%; /* Ajusta el tamaño a un 90% del ancho de la pantalla */
     height: auto;
+    margin-bottom: 20px; /* Añade un pequeño margen debajo del título */
 }
 
-/* Estilo para el subtítulo */
+/* Estilo para el subtítulo (sin negrita) */
 #subtitulo {
     font-size: 2rem;
-    font-weight: bold;
     color: #e3fc0a; /* Color verde brillante */
     margin-top: 20px;
     width: 90%; /* Hace que el subtítulo tenga el mismo ancho que la imagen */
+    margin-bottom: 30px; /* Añade espacio debajo del subtítulo */
+    font-weight: normal; /* Asegura que el subtítulo no sea negrita */
 }
 
 /* Estilo para los textos en la sección principal */
