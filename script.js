@@ -18,7 +18,7 @@ function cambiarIdioma() {
         proximamente.textContent = "COMING SOON";
         fecha.textContent = "JUNE 2025";
         lugar.textContent = "LA PAZ - BOLIVIA";
-        btnCambiarIdioma.textContent = "Change language";
+        btnCambiarIdioma.textContent = "ESPAÑOL";
         idioma = 'en';
     } else {
         // Volver a español
@@ -26,7 +26,7 @@ function cambiarIdioma() {
         proximamente.textContent = "PRÓXIMAMENTE";
         fecha.textContent = "JUNIO 2025";
         lugar.textContent = "LA PAZ - BOLIVIA";
-        btnCambiarIdioma.textContent = "Cambiar idioma";
+        btnCambiarIdioma.textContent = "INGLÉS";
         idioma = 'es';
     }
 }
