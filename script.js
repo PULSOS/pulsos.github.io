@@ -14,18 +14,18 @@ let idioma = 'es';
 function cambiarIdioma() {
     if (idioma === 'es') {
         // Cambiar a inglés
-        subtitulo.textContent = "INTERNATIONAL PERFORMING ARTS GATHERING";
-        proximamente.textContent = "COMING SOON";
-        fecha.textContent = "JUNE 2025";
-        lugar.textContent = "LA PAZ - BOLIVIA";
+        subtitulo.textContent = subtitulo.getAttribute('data-en');
+        proximamente.textContent = proximamente.getAttribute('data-en');
+        fecha.textContent = fecha.getAttribute('data-en');
+        lugar.textContent = lugar.getAttribute('data-en');
         btnCambiarIdioma.textContent = "ESPAÑOL";
         idioma = 'en';
     } else {
         // Volver a español
-        subtitulo.textContent = "ENCUENTRO INTERNACIONAL DE ARTES ESCÉNICAS";
-        proximamente.textContent = "PRÓXIMAMENTE";
-        fecha.textContent = "JUNIO 2025";
-        lugar.textContent = "LA PAZ - BOLIVIA";
+        subtitulo.textContent = subtitulo.getAttribute('data-es');
+        proximamente.textContent = proximamente.getAttribute('data-es');
+        fecha.textContent = fecha.getAttribute('data-es');
+        lugar.textContent = lugar.getAttribute('data-es');
         btnCambiarIdioma.textContent = "INGLÉS";
         idioma = 'es';
     }
