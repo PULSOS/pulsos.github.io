@@ -89,10 +89,12 @@ section p {
 
 /* Estilos para los botones de redes sociales */
 .social-buttons {
-    margin-top: 30px;
+    margin-top: 50px; /* Los mueve un poco más abajo */
     display: flex;
     justify-content: center;
     gap: 20px;
+    position: absolute;
+    bottom: 100px; /* Coloca los botones más arriba del texto de derechos reservados */
 }
 
 .social-icon {
@@ -102,6 +104,17 @@ section p {
     text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
+/* Efecto hover para los íconos de redes sociales (inversión de colores) */
 .social-icon:hover {
-    color: black; /* Cambia a negro al pasar el mouse */
+    color: white
+}
+
+/* Estilos para el pie de página (footer) */
+.footer {
+    position: absolute;
+    bottom: 10px; /* Ajusta la posición del pie de página para que no se superponga con los botones */
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
 }

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encuentro Internacional de Artes Escénicas</title>
+    <!-- Incluir FontAwesome desde su CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,17 +31,21 @@
         <!-- Botón para cambiar el idioma -->
         <button id="btn-cambiar-idioma">ENGLISH</button>
 
-       <!-- Botones de redes sociales usando íconos de FontAwesome -->
-       <div class="social-buttons">
-           <a href="https://www.facebook.com/pulsos.encuentro" target="_blank" class="social-icon facebook">
-               <i class="fab fa-facebook"></i> <!-- Ícono de Facebook -->
-           </a>
-           <a href="https://www.instagram.com/pulsos.encuentro" target="_blank" class="social-icon instagram">
-               <i class="fab fa-instagram"></i> <!-- Ícono de Instagram -->
-           </a>
-       </div>
-
+      <!-- Botones de redes sociales usando íconos de FontAwesome -->
+      <div class="social-buttons">
+        <a href="https://www.facebook.com/pulsos.encuentro" target="_blank" class="social-icon facebook" aria-label="Facebook">
+            <i class="fab fa-facebook"></i> <!-- Ícono de Facebook -->
+        </a>
+        <a href="https://www.instagram.com/pulsos.encuentro" target="_blank" class="social-icon instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i> <!-- Ícono de Instagram -->
+        </a>
     </div>
+
+    <!-- Leyenda de derechos reservados -->
+    <footer class="footer">
+        <p> © 2025. PULSOS - Encuentro Internacional de Artes Escénicas</p>
+        <p> Todos los derechos reservados.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
