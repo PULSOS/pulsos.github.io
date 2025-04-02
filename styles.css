@@ -17,6 +17,7 @@ body {
     align-items: center; /* Centra los elementos verticalmente */
     text-align: center; /* Asegura que todo el texto esté centrado */
     flex-direction: column; /* Organiza los elementos de arriba a abajo */
+    position: relative;
 }
 
 /* Fondo de la página con la imagen PNG */
@@ -40,8 +41,8 @@ body {
     margin-bottom: 20px; /* Añade un pequeño margen debajo del título */
 }
 
-/* Estilo para el subtítulo (sin negrita) */
-#subtitulo {
+/* Estilo para los subtítulos (sin negrita) */
+.subtitulo {
     font-size: 2rem;
     color: #e3fc0a; /* Color verde brillante */
     margin-top: 20px;

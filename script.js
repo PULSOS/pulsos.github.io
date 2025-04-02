@@ -1,22 +1,6 @@
 // Obtén el botón de cambio de idioma
 const btnCambiarIdioma = document.getElementById("btn-cambiar-idioma");
 
-// Define las traducciones de los textos
-const textos = {
-    es: {
-        subtitulo: "ENCUENTRO INTERNACIONAL DE ARTES ESCÉNICAS",
-        proximamente: "PRÓXIMAMENTE",
-        fecha: "JUNIO 2025",
-        lugar: "LA PAZ - BOLIVIA",
-    },
-    en: {
-        subtitulo: "INTERNATIONAL PERFORMING ARTS GATHERING",
-        proximamente: "COMING SOON",
-        fecha: "JUNE 2025",
-        lugar: "LA PAZ - BOLIVIA",
-    }
-};
-
 // Función para cambiar el idioma
 function cambiarIdioma() {
     // Verifica el idioma actual
@@ -26,19 +10,39 @@ function cambiarIdioma() {
     if (idiomaActual === "es") {
         // Cambiar al inglés
         document.documentElement.lang = "en";
-        document.getElementById("subtitulo").innerText = textos.en.subtitulo;
-        document.getElementById("proximamente").innerText = textos.en.proximamente;
-        document.getElementById("fecha").innerText = textos.en.fecha;
-        document.getElementById("lugar").innerText = textos.en.lugar;
-        btnCambiarIdioma.innerText = "ESPAÑOL"; // Cambiar el texto del botón a Español
+
+        // Ocultar el texto en español y mostrar el texto en inglés
+        document.getElementById("subtitulo-es").style.display = "none";
+        document.getElementById("subtitulo-en").style.display = "block";
+
+        document.getElementById("proximamente-es").style.display = "none";
+        document.getElementById("fecha-es").style.display = "none";
+        document.getElementById("lugar-es").style.display = "none";
+
+        document.getElementById("proximamente-en").style.display = "block";
+        document.getElementById("fecha-en").style.display = "block";
+        document.getElementById("lugar-en").style.display = "block";
+
+        // Cambiar el texto del botón a Español
+        btnCambiarIdioma.innerText = "ESPAÑOL"; 
     } else {
         // Cambiar al español
         document.documentElement.lang = "es";
-        document.getElementById("subtitulo").innerText = textos.es.subtitulo;
-        document.getElementById("proximamente").innerText = textos.es.proximamente;
-        document.getElementById("fecha").innerText = textos.es.fecha;
-        document.getElementById("lugar").innerText = textos.es.lugar;
-        btnCambiarIdioma.innerText = "INGLÉS"; // Cambiar el texto del botón a Inglés
+
+        // Ocultar el texto en inglés y mostrar el texto en español
+        document.getElementById("subtitulo-es").style.display = "block";
+        document.getElementById("subtitulo-en").style.display = "none";
+
+        document.getElementById("proximamente-es").style.display = "block";
+        document.getElementById("fecha-es").style.display = "block";
+        document.getElementById("lugar-es").style.display = "block";
+
+        document.getElementById("proximamente-en").style.display = "none";
+        document.getElementById("fecha-en").style.display = "none";
+        document.getElementById("lugar-en").style.display = "none";
+
+        // Cambiar el texto del botón a Inglés
+        btnCambiarIdioma.innerText = "INGLÉS"; 
     }
 }
 

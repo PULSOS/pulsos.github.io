@@ -5,31 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encuentro Internacional de Artes Escénicas</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        @font-face {
-            font-family: 'EdinguDemo';
-            src: url('EdinguDemo.otf') format('opentype');
-        }
-    </style>
 </head>
 <body>
-    <!-- Fondo de la página con la imagen PNG -->
     <div class="background">
-        <header>
-            <!-- Título en formato de imagen PNG -->
-            <img src="titulo.png" alt="Encuentro Internacional de Artes Escénicas" id="titulo">
-            <p id="subtitulo" data-es="ENCUENTRO INTERNACIONAL DE ARTES ESCÉNICAS" data-en="INTERNATIONAL PERFORMING ARTS GATHERING">ENCUENTRO INTERNACIONAL DE ARTES ESCÉNICAS</p>
-        </header>
+        <!-- Título de la página (imagen PNG) -->
+        <img id="titulo" src="titulo.png" alt="Título del Evento">
 
-        <!-- Sección con los textos que se deben mostrar -->
+        <!-- Subtítulo en español -->
+        <h2 id="subtitulo-es" class="subtitulo">ENCUENTRO INTERNACIONAL DE ARTES ESCÉNICAS</h2>
+
+        <!-- Subtítulo en inglés (inicialmente oculto) -->
+        <h2 id="subtitulo-en" class="subtitulo" style="display: none;">INTERNATIONAL PERFORMING ARTS GATHERING</h2>
+
+        <!-- Texto en español -->
         <section>
-            <p id="proximamente" data-es="PR&Oacute;XIMAMENTE" data-en="COMING SOON">PR&Oacute;XIMAMENTE</p>
-            <p id="fecha" data-es="JUNIO 2025" data-en="JUNE 2025">JUNIO 2025</p>
-            <p id="lugar" data-es="LA PAZ - BOLIVIA" data-en="LA PAZ - BOLIVIA">LA PAZ - BOLIVIA</p>
+            <p id="proximamente-es" class="texto">PRÓXIMAMENTE</p>
+            <p id="fecha-es" class="texto">JUNIO 2025</p>
+            <p id="lugar-es" class="texto">LA PAZ - BOLIVIA</p>
         </section>
 
-        <!-- Botón para cambiar el idioma, en la esquina superior derecha -->
-        <button id="btn-cambiar-idioma">ESPAÑOL</button>
+        <!-- Texto en inglés (inicialmente oculto) -->
+        <section style="display: none;" id="section-en">
+            <p id="proximamente-en" class="texto">COMING SOON</p>
+            <p id="fecha-en" class="texto">JUNE 2025</p>
+            <p id="lugar-en" class="texto">LA PAZ - BOLIVIA</p>
+        </section>
+
+        <!-- Botón para cambiar el idioma -->
+        <button id="btn-cambiar-idioma">INGLÉS</button>
     </div>
 
     <script src="script.js"></script>
