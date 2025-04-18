@@ -1,7 +1,7 @@
 /* Cargar la tipografía personalizada */
 @font-face {
     font-family: 'EdinguDemo';
-    src: url('EdinguDemo.otf') format('opentype');
+    src: url('Edingu2.ttf') format('opentype');
 }
 
 /* Estilos globales para el cuerpo de la página */
