@@ -50,20 +50,20 @@ section p {
 
 /* Estilo específico para el texto "PRÓXIMAMENTE" */
 #proximamente-es, #proximamente-en {
-    font-size: 4rem; /* Aumenta el tamaño */
+    font-size: 3rem; /* Aumenta el tamaño */
     color: white; /* Color verde brillante */
     margin-bottom: 20px; /* Añade un espacio debajo de "PRÓXIMAMENTE" */
 }
 
 /* Estilo para los textos en español */
-#fecha-es, #lugar-es {
+#fecha-es, #fecha-en {
     font-size: 1.5rem;
-    color: #e3fc0a; /* Color verde brillante */
+    color: #ffffff; /* Color verde brillante */
     margin-top: 10px; /* Añade un espacio superior entre "JUNIO 2025" y "LA PAZ - BOLIVIA" */
 }
 
 /* Estilo para los textos en inglés */
-#fecha-en, #lugar-en {
+#lugar-es, #lugar-en {
     font-size: 1.5rem;
     color: #e3fc0a; /* Color verde brillante */
     margin-top: 10px; /* Añade un espacio superior entre "JUNE 2025" y "LA PAZ - BOLIVIA" */
