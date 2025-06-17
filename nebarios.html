@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nebaí Ríos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .contenido-artista {
+      padding: 120px 20px 80px;
+      max-width: 900px;
+      margin: auto;
+      color: white;
+      font-family: 'Lato', sans-serif;
+      line-height: 1.6;
+    }
+
+    .contenido-artista h1 {
+      font-family: 'IntroRustG', sans-serif;
+      font-size: 2rem;
+      color: #e3fc0a;
+      margin-bottom: -10px;
+      text-align: center;
+    }
+    .contenido-artista h2 {
+      font-family: 'IntroRustG', sans-serif;
+      font-size: 1.5rem;
+      color: #e3fc0a;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contenido-artista img {
+      float: right;
+      max-width: 300px;
+      margin: 0 0 20px 40px;
+      height: auto;
+    }
+
+    .contenido-artista p {
+      font-size: 1.1rem;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .contenido-artista img {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        max-width: 80%;
+      }
+
+      .contenido-artista {
+        padding: 100px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo-link">
+      <img id="logoindex" src="pulsos.png" alt="Logo PULSOS" class="logo" />
+    </a>
+    <ul class="menu">
+      <li><a href="obras.html">Obras</a></li>
+      <li><a href="talleres.html">Talleres</a></li>
+      <li><a href="artistas.html">Artistas</a></li>
+    </ul>
+  </nav>
+
+  <button id="btn-cambiar-idioma">ENGLISH</button>
+
+  <div class="background">
+    <div class="contenido-artista">
+      <h1>NEBAÍ RÍOS</h1>
+      <h2>Bolivia</h2>
+      <img src="nebarios.png" alt="Foto de Nebaí Ríos" />
+
+      <p>Nació en 1994 en La Paz. Es tecladista, compositorx e investigadorx musical, enfoca su trabajo en la creación de bandas sonoras
+        y diseño sonoro para teatro y medios audiovisuales. Inició su formación en el Conservatorio Plurinacional de Música, en las
+        especialidades de piano clásico y moderno. Más adelante, cursó la Maestría Académica en Música en la Universidade
+        Federal de Uberlândia (Brasil).</p>
+       <p> Sus obras han sido seleccionadas y presentadas en festivales en Bolivia, Brasil, México y Portugal.
+        Paralelamente, explora e investiga ritmos populares y latinoamericanos como integrante de la agrupación de cumbia psicodélica Los Sapos.
+      </p>
+
+    </div>
+
+    <div class="social-buttons" style="position: relative; bottom: auto; left: auto;">
+      <a href="https://www.facebook.com/pulsos.encuentro" target="_blank" class="social-icon facebook" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/pulsos.encuentro" target="_blank" class="social-icon instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <footer class="footer">
+      <p>© 2025. PULSOS - Encuentro Internacional de Artes Escénicas. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

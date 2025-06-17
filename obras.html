@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Artistas 2025</title>
+
+  <!-- FontAwesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Tipografía EdinguDemo -->
+  <style>
+    @font-face {
+      font-family: 'EdinguDemo';
+      src: url('EdinguDemo.ttf') format('truetype');
+    }
+
+    .obras-contenido {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 100px; /* espacio para la navbar */
+    }
+
+    .titulo-obras {
+      font-family: 'EdinguDemo', sans-serif;
+      font-size: 3rem;
+      color: #e3fc0a;
+      margin-bottom: 40px;
+    }
+
+    .obras-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .obra {
+      position: relative;
+      max-width: 300px;
+      flex: 1 1 300px;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .obra img.main-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+.mensaje-obras {
+  margin-top: 60px;
+  font-family: 'EdinguDemo', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'EdinguDemo', sans-serif;
+      font-size: 1.5rem;
+      text-align: center;
+      color: white;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+      line-height: 1.4;
+    }
+
+    .overlay-text span {
+      font-size: 1rem;
+      display: block;
+    }
+
+    .obra:hover .main-img {
+      opacity: 0.3;
+    }
+
+    .obra:hover .overlay-text {
+      opacity: 1;
+    }
+
+    @media (max-width: 650px) {
+      .obras-container {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .obra {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo-link">
+      <img id="logoindex" src="pulsos.png" alt="Logo PULSOS" class="logo" />
+    </a>
+    <ul id="menu-es" class="menu">
+      <li><a href="obras.html">Obras</a></li>
+      <li><a href="talleres.html">Talleres</a></li>
+      <li><a href="artistas.html">Artistas</a></li>
+    </ul>
+    <ul id="menu-en" class="menu" style="display: none;">
+      <li><a href="obras.html">Performances</a></li>
+      <li><a href="talleres.html">Workshops</a></li>
+      <li><a href="artistas.html">Artists</a></li>
+    </ul>
+  </nav>
+
+  <!-- Botón de cambio de idioma -->
+  <button id="btn-cambiar-idioma">ENGLISH</button>
+
+  <!-- Fondo y contenido -->
+  <div class="background">
+    <div class="obras-contenido">
+      <h1 class="titulo-obras">OBRAS 2025</h1>
+
+      <div class="obras-container">
+        <!-- Obra: Julián -->
+        <a href="flyer_julián.pdf" target="_blank" class="obra">
+          <img src="julian.jpeg" alt="Julián acerca de Julián" class="main-img" />
+          <div class="overlay-text">INAUGURACIÓN</div>
+        </a>
+      </div>
+
+      <div class="mensaje-obras">
+        Programación completa de obras en breve...
+      </div>
+
+       
+      </div>
+    </div>
+  </div>
+
+  <!-- Botones de redes sociales (fijos abajo) -->
+  <div class="social-buttons">
+    <a href="https://www.facebook.com/pulsos.encuentro" target="_blank" class="social-icon facebook" aria-label="Facebook">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/pulsos.encuentro" target="_blank" class="social-icon instagram" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025. PULSOS - Encuentro Internacional de Artes Escénicas. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

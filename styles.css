@@ -1,76 +1,104 @@
-/* Cargar la tipografía personalizada */
+/* ===============================
+   FUENTES PERSONALIZADAS
+================================= */
 @font-face {
     font-family: 'EdinguDemo';
     src: url('Edingu2.ttf') format('opentype');
-}
-
-/* Estilos globales para el cuerpo de la página */
-body {
+  }
+  
+  @font-face {
+    font-family: 'IntroRustG';
+    src: url('IntroRustG-Base2Line.otf') format('truetype');
+  }
+  
+  
+  /* ===============================
+     ESTILOS GENERALES
+  ================================= */
+  body {
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
-    font-family: 'EdinguDemo', sans-serif;
-    height: 100vh;
-    display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
-    text-align: center; /* Asegura que todo el texto esté centrado */
-    flex-direction: column; /* Organiza los elementos de arriba a abajo */
-    position: relative;
-}
-
-/* Fondo de la página con la imagen PNG */
-.background {
-    background-image: url('fondo.png'); /* Asegúrate de tener el archivo 'fondo.png' en la misma carpeta */
+    background-image: url('fondo.png');
     background-size: cover;
     background-position: center;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
-    flex-direction: column; /* Organiza los elementos de arriba a abajo */
-    text-align: center; /* Asegura que todo el texto esté centrado */
-}
-
-/* Título de la página (imagen PNG) */
-#titulo {
-    max-width: 90%; /* Ajusta el tamaño a un 90% del ancho de la pantalla */
-    height: auto;
-    margin-bottom: 30px; /* Añade un pequeño margen debajo del título */
-}
-
-/* Estilo para los textos en la sección principal */
-section p {
-    font-size: 1.5rem;
-    margin: 10px;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'EdinguDemo', sans-serif;
     color: white;
-}
-
-/* Estilo específico para el texto "PRÓXIMAMENTE" */
-#proximamente-es, #proximamente-en {
-    font-size: 3rem; /* Aumenta el tamaño */
-    color: white; /* Color verde brillante */
-    margin-bottom: 20px; /* Añade un espacio debajo de "PRÓXIMAMENTE" */
-}
-
-/* Estilo para los textos en español */
-#fecha-es, #fecha-en {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .background {
+    width: 100%;
+    max-width: 1200px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  
+  /* ===============================
+     NAVBAR
+  ================================= */
+  .navbar {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    padding: 10px 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background: transparent;
+  }
+  
+  .logo-link {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  #logoindex {
+    max-width: 150px;
+    height: auto;
+    margin: 0;
+  }
+  
+  .logo-link:hover img {
+    filter: brightness(1000%) grayscale(100%) contrast(1000%);
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar li a {
+    color: #e3fc0a;
+    text-decoration: none;
     font-size: 1.5rem;
-    color: #ffffff; /* Color verde brillante */
-    margin-top: 10px; /* Añade un espacio superior entre "JUNIO 2025" y "LA PAZ - BOLIVIA" */
-}
-
-/* Estilo para los textos en inglés */
-#lugar-es, #lugar-en {
-    font-size: 1.5rem;
-    color: #e3fc0a; /* Color verde brillante */
-    margin-top: 10px; /* Añade un espacio superior entre "JUNE 2025" y "LA PAZ - BOLIVIA" */
-}
-
-/* Botón para cambiar el idioma, en la esquina superior derecha */
-#btn-cambiar-idioma {
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'IntroRustG', sans-serif;
+  }
+  
+  .navbar li a:hover {
+    color: white;
+  }
+  
+  
+  /* ===============================
+     BOTÓN DE CAMBIO DE IDIOMA
+  ================================= */
+  #btn-cambiar-idioma {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -80,42 +108,141 @@ section p {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 1rem;
-}
-
-#btn-cambiar-idioma:hover {
+    z-index: 9999;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #btn-cambiar-idioma:hover {
     background-color: transparent;
     color: #e3fc0a;
-}
-
-/* Estilos para los botones de redes sociales */
-.social-buttons {
-    margin-top: 50px; /* Los mueve un poco más abajo */
+  }
+  
+  
+  /* ===============================
+     CONTENIDO PRINCIPAL CENTRADO
+  ================================= */
+  .contenido-central {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+  }
+  
+  #titulo {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  
+  section p {
+    font-size: 1.5rem;
+    margin: 10px;
+    color: white;
+  }
+  
+  #proximamente-es, #proximamente-en {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  #fecha-es, #fecha-en {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  #lugar-es, #lugar-en {
+    font-size: 1.5rem;
+    color: #e3fc0a;
+    margin-top: 10px;
+  }
+  
+  
+  /* ===============================
+     BOTONES DE REDES SOCIALES
+  ================================= */
+  .social-buttons {
+    position: relative;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     gap: 20px;
-    position: absolute;
-    bottom: 100px; /* Coloca los botones más arriba del texto de derechos reservados */
-}
-
-.social-icon {
-    font-size: 40px; /* Tamaño grande para los íconos */
-    color: #e3fc0a; /* Color amarillo */
-    transition: all 0.3s ease; /* Añade una transición suave */
-    text-decoration: none; /* Elimina el subrayado del enlace */
-}
-
-/* Efecto hover para los íconos de redes sociales (inversión de colores) */
-.social-icon:hover {
-    color: white
-}
-
-/* Estilos para el pie de página (footer) */
-.footer {
-    position: absolute;
-    bottom: 10px; /* Ajusta la posición del pie de página para que no se superponga con los botones */
+    z-index: 1000;
+  }
+  
+  .social-icon {
+    font-size: 40px;
+    color: #e3fc0a;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color: white;
+  }
+  
+  
+  /* ===============================
+     FOOTER
+  ================================= */
+  .footer {
+    margin-top: 50px;
+    padding: 10px 0;
     width: 100%;
     text-align: center;
     color: white;
     font-size: 1rem;
-    font-family: 'Times New Roman', Times, serif; /* ← Aquí aplicas la nueva tipografía */
-}
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 1000;
+  }
+  
+  
+  /* ===============================
+     ESTILOS PARA TALLERES
+  ================================= */
+  .talleres-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 150px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .taller {
+    position: relative;
+    cursor: pointer;
+    max-width: 45%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .taller img.taller-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+  
+  .taller img.titulo-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    max-width: 80%;
+    pointer-events: none;
+  }
+  
+  .taller:hover img.taller-img {
+    opacity: 0.5;
+  }
+  
+  .taller:hover img.titulo-img {
+    opacity: 1;
+  }
+  

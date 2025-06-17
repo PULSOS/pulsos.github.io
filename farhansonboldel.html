@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farhan Sonboldel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .contenido-artista {
+      padding: 120px 20px 80px;
+      max-width: 900px;
+      margin: auto;
+      color: white;
+      font-family: 'Lato', sans-serif;
+      line-height: 1.6;
+    }
+
+    .contenido-artista h1 {
+      font-family: 'IntroRustG', sans-serif;
+      font-size: 2rem;
+      color: #e3fc0a;
+      margin-bottom: -10px;
+      text-align: center;
+    }
+    .contenido-artista h2 {
+      font-family: 'IntroRustG', sans-serif;
+      font-size: 1.5rem;
+      color: #e3fc0a;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contenido-artista img {
+      float: right;
+      max-width: 300px;
+      margin: 0 0 20px 40px;
+      height: auto;
+    }
+
+    .contenido-artista p {
+      font-size: 1.1rem;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .contenido-artista img {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        max-width: 80%;
+      }
+
+      .contenido-artista {
+        padding: 100px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo-link">
+      <img id="logoindex" src="pulsos.png" alt="Logo PULSOS" class="logo" />
+    </a>
+    <ul class="menu">
+      <li><a href="obras.html">Obras</a></li>
+      <li><a href="talleres.html">Talleres</a></li>
+      <li><a href="artistas.html">Artistas</a></li>
+    </ul>
+  </nav>
+
+  <button id="btn-cambiar-idioma">ENGLISH</button>
+
+  <div class="background">
+    <div class="contenido-artista">
+      <h1>FARHAN SONBOLDEL</h1>
+      <h2>Irán</h2>
+      <img src="sonboldel.png" alt="Foto de Farhan Sonboldel" />
+
+      <p>Nacido en 1997, es licenciado en Arte Dramático por la Universidad de Teherán y actualmente cursa un máster en
+        Trabajo Cultural de Medios Internacionales en la Hochschule de Darmstadt (Alemania). Colabora con el Festival de
+        Performance Online Re-Connect. Su trabajo se centra en el teatro alternativo, el activismo y la dramaturgia política,
+        buscando recuperar la esfera pública a través de protestas performáticas y explorar la relación entre la realidad
+        virtual y física. Como artista interdisciplinario, ha trabajado en teatro inmersivo, documental, ciberperformance y
+        artivismo. Ha dirigido seminarios y festivales, y es cofundador de 9: Documentary Theatre Repertoire.</p>
+
+    </div>
+
+    <div class="social-buttons" style="position: relative; bottom: auto; left: auto;">
+      <a href="https://www.facebook.com/pulsos.encuentro" target="_blank" class="social-icon facebook" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/pulsos.encuentro" target="_blank" class="social-icon instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <footer class="footer">
+      <p>© 2025. PULSOS - Encuentro Internacional de Artes Escénicas. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

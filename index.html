@@ -1,51 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encuentro Internacional de Artes Escénicas</title>
-    <!-- Incluir FontAwesome desde su CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encuentro Internacional de Artes Escénicas</title>
 
-    <link rel="stylesheet" href="styles.css">
+  <!-- FontAwesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="background">
-        <!-- Título de la página (imagen PNG) que cambia según el idioma -->
-        <img id="titulo" src="titulo.png" alt="Título del Evento">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo-link">
+      <img id="logoindex" src="pulsos.png" alt="Logo PULSOS" class="logo" />
+    </a>
+    <ul id="menu-es" class="menu">
+      <li><a href="obras.html">Obras</a></li>
+      <li><a href="talleres.html">Talleres</a></li>
+      <li><a href="artistas.html">Artistas</a></li>
+    </ul>
+    <ul id="menu-en" class="menu" style="display: none;">
+      <li><a href="obras.html">Performances</a></li>
+      <li><a href="talleres.html">Workshops</a></li>
+      <li><a href="artistas.html">Artists</a></li>
+    </ul>
+  </nav>
 
-        <!-- Texto en español -->
-        <section id="section-es">
-            <p id="proximamente-es" class="texto">Del 23 al 29 de junio</p>
-            <p id="fecha-es" class="texto">Programación completa próximamente</p>
-            <p id="lugar-es" class="texto">LA PAZ - BOLIVIA</p>
-        </section>
+  <!-- Botón de idioma -->
+  <button id="btn-cambiar-idioma">ENGLISH</button>
 
-        <!-- Texto en inglés (inicialmente oculto) -->
-        <section id="section-en" style="display: none;">
-            <p id="proximamente-en" class="texto">June 23 - 29</p>
-            <p id="fecha-en" class="texto">Full program coming soon</p>
-            <p id="lugar-en" class="texto">LA PAZ - BOLIVIA</p>
-        </section>
+  <!-- Contenedor principal -->
+  <div class="background">
+    <div class="contenido-central">
+      <!-- Título -->
+      <img id="titulo" src="titulo.png" alt="Título del Evento" />
 
-        <!-- Botón para cambiar el idioma -->
-        <button id="btn-cambiar-idioma">ENGLISH</button>
+      <!-- Contenido en español -->
+      <section id="section-es">
+        <p id="proximamente-es" class="texto">Del 23 al 29 de junio</p>
+        <p id="fecha-es" class="texto">Programación completa próximamente</p>
+        <p id="lugar-es" class="texto">LA PAZ - BOLIVIA</p>
+      </section>
 
-      <!-- Botones de redes sociales usando íconos de FontAwesome -->
-      <div class="social-buttons">
-        <a href="https://www.facebook.com/pulsos.encuentro" target="_blank" class="social-icon facebook" aria-label="Facebook">
-            <i class="fab fa-facebook"></i> <!-- Ícono de Facebook -->
-        </a>
-        <a href="https://www.instagram.com/pulsos.encuentro" target="_blank" class="social-icon instagram" aria-label="Instagram">
-            <i class="fab fa-instagram"></i> <!-- Ícono de Instagram -->
-        </a>
+      <!-- Contenido en inglés -->
+      <section id="section-en" style="display: none;">
+        <p id="proximamente-en" class="texto">June 23 - 29</p>
+        <p id="fecha-en" class="texto">Full program coming soon</p>
+        <p id="lugar-en" class="texto">LA PAZ - BOLIVIA</p>
+      </section>
     </div>
 
-    <!-- Leyenda de derechos reservados -->
-    <footer class="footer">
-        <p> © 2025. PULSOS - Encuentro Internacional de Artes Escénicas. Todos los derechos reservados.</p>
-    </footer>
+    <!-- Botones de redes sociales -->
+    <div class="social-buttons">
+      <a href="https://www.facebook.com/pulsos.encuentro" target="_blank" class="social-icon facebook" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/pulsos.encuentro" target="_blank" class="social-icon instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2025. PULSOS - Encuentro Internacional de Artes Escénicas. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
