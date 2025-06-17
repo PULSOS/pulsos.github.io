@@ -29,6 +29,7 @@
       font-size: 3rem;
       color: #e3fc0a;
       margin-bottom: 40px;
+      text-align: center;
     }
 
     .obras-container {
@@ -37,13 +38,18 @@
       gap: 40px;
       flex-wrap: wrap;
       margin-top: 20px;
+      width: 100%;
+      max-width: 960px;
+      padding: 0 20px;
+      box-sizing: border-box;
     }
 
     .obra {
       max-width: 300px;
       flex: 1 1 300px;
-      overflow: hidden;
+      overflow: visible; /* Cambiado para no cortar el botón */
       text-align: center;
+      position: relative;
     }
 
     .imagen-hover-wrapper {
@@ -72,6 +78,7 @@
       transition: opacity 0.3s ease;
       pointer-events: none;
       line-height: 1.4;
+      text-shadow: 0 0 6px rgba(0,0,0,0.7);
     }
 
     .imagen-hover-wrapper:hover .main-img {
@@ -84,7 +91,7 @@
 
     .btn-reservas {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 15px;
       padding: 12px 24px;
       background-color: #e3fc0a;
       color: black;
@@ -94,6 +101,8 @@
       border: none;
       border-radius: 6px;
       transition: background-color 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+      z-index: 10;
     }
 
     .btn-reservas:hover {
@@ -107,6 +116,8 @@
       font-size: 2rem;
       text-align: center;
       color: #ffffff;
+      padding: 0 20px;
+      box-sizing: border-box;
     }
 
     @media (max-width: 650px) {

@@ -245,11 +245,11 @@
   /* ===============================
      ESTILOS BOTÓN MENÚ HAMBURGUESA (MÓVIL SOLO)
   ================================= */
-  /* Por defecto oculto para escritorio */
-  #btn-menu-hamburguesa {
+  /* Ocultar botón menú en escritorio */
+  .btn-menu {
     display: none;
   }
-
+  
   /* Mostrar solo en móvil */
   @media (max-width: 650px) {
     body {
@@ -266,7 +266,7 @@
     }
   
     /* Botón hamburguesa visible solo en móvil */
-    #btn-menu-hamburguesa {
+    .btn-menu {
       display: block;
       background: none;
       border: none;
@@ -274,52 +274,11 @@
       z-index: 1100;
       width: 40px;
       height: 40px;
-      position: relative;
+      color: #e3fc0a;
+      font-size: 1.8rem;
     }
   
-    #btn-menu-hamburguesa span,
-    #btn-menu-hamburguesa span::before,
-    #btn-menu-hamburguesa span::after {
-      display: block;
-      background-color: #e3fc0a;
-      height: 3px;
-      border-radius: 2px;
-      position: absolute;
-      width: 100%;
-      transition: all 0.3s ease;
-    }
-  
-    #btn-menu-hamburguesa span {
-      top: 50%;
-      margin-top: -1.5px;
-    }
-  
-    #btn-menu-hamburguesa span::before {
-      content: "";
-      top: -10px;
-    }
-  
-    #btn-menu-hamburguesa span::after {
-      content: "";
-      top: 10px;
-    }
-  
-    /* Animación botón hamburguesa abierto */
-    #btn-menu-hamburguesa[aria-expanded="true"] span {
-      background-color: transparent;
-    }
-  
-    #btn-menu-hamburguesa[aria-expanded="true"] span::before {
-      top: 0;
-      transform: rotate(45deg);
-    }
-  
-    #btn-menu-hamburguesa[aria-expanded="true"] span::after {
-      top: 0;
-      transform: rotate(-45deg);
-    }
-  
-    /* Menú oculto por defecto */
+    /* Menú oculto por defecto en móvil */
     .navbar ul {
       flex-direction: column;
       background: rgba(0, 0, 0, 0.85);
@@ -417,3 +376,4 @@
       display: block;
     }
   }
+  
