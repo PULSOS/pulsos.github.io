@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- Tipografía EdinguDemo -->
   <style>
     @font-face {
       font-family: 'EdinguDemo';
@@ -128,6 +127,12 @@
     <a href="index.html" class="logo-link">
       <img id="logoindex" src="pulsos.png" alt="Logo PULSOS" class="logo" />
     </a>
+
+    <!-- Botón hamburguesa -->
+    <button id="btn-menu-hamburguesa" aria-label="Menú" aria-expanded="false" aria-controls="menu-es menu-en">
+      <span></span>
+    </button>
+
     <ul id="menu-es" class="menu">
       <li><a href="obras.html">Obras</a></li>
       <li><a href="talleres.html">Talleres</a></li>
@@ -151,12 +156,12 @@
       <div class="obras-container">
         <div class="obra">
           <div class="imagen-hover-wrapper">
-            <a href="Flyer_Julián.pdf" target="_blank" class="imagen-link">
+            <a href="Flyer_Julián.pdf" target="_blank" class="imagen-link">
               <img src="julian.jpeg" alt="Julián acerca de Julián" class="main-img" />
               <div class="overlay-text">INAUGURACIÓN</div>
             </a>
           </div>
-          <a href="https://forms.gle/ruchHWTMfGWBUnZJA" target="blank" class="btn-reservas">RESERVAS</a>
+          <a href="https://forms.gle/ruchHWTMfGWBUnZJA" target="_blank" class="btn-reservas">RESERVAS</a>
         </div>
       </div>
 
@@ -166,7 +171,7 @@
     </div>
   </div>
 
-  <!-- Botones de redes sociales (fijos abajo) -->
+  <!-- Botones de redes sociales -->
   <div class="social-buttons">
     <a href="https://www.facebook.com/pulsos.encuentro" target="_blank" class="social-icon facebook" aria-label="Facebook">
       <i class="fab fa-facebook"></i>

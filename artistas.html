@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Artistas 2025</title>
+  <title>Artistas - PULSOS 2025</title>
 
   <!-- FontAwesome para íconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- Tipografía EdinguDemo -->
+  <!-- Tipografía y estilos específicos -->
   <style>
     @font-face {
       font-family: 'EdinguDemo';
@@ -22,7 +22,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      padding-top: 100px; /* espacio para la navbar */
+      padding-top: 100px;
     }
 
     .titulo-artistas {
@@ -101,6 +101,12 @@
     <a href="index.html" class="logo-link">
       <img id="logoindex" src="pulsos.png" alt="Logo PULSOS" class="logo" />
     </a>
+
+    <!-- Botón hamburguesa solo para móvil -->
+    <button id="btn-menu-hamburguesa" aria-label="Menú" aria-expanded="false" aria-controls="menu-es menu-en">
+      <span></span>
+    </button>
+
     <ul id="menu-es" class="menu">
       <li><a href="obras.html">Obras</a></li>
       <li><a href="talleres.html">Talleres</a></li>
@@ -134,16 +140,16 @@
           <div class="overlay-text">Farhan Sonboldel<br><span>(Irán)</span></div>
         </a>
 
-         <!-- Artista: Nebaí Ríos -->
-         <a href="nebarios.html" class="artista">
-            <img src="nebarios.png" alt="Farhan Sonboldel" class="main-img" />
-            <div class="overlay-text">Nebaí Ríos<br><span>(Bolivia)</span></div>
+        <!-- Artista: Nebaí Ríos -->
+        <a href="nebarios.html" class="artista">
+          <img src="nebarios.png" alt="Nebaí Ríos" class="main-img" />
+          <div class="overlay-text">Nebaí Ríos<br><span>(Bolivia)</span></div>
         </a>
       </div>
     </div>
   </div>
 
-  <!-- Botones de redes sociales (fijos abajo) -->
+  <!-- Botones de redes sociales -->
   <div class="social-buttons">
     <a href="https://www.facebook.com/pulsos.encuentro" target="_blank" class="social-icon facebook" aria-label="Facebook">
       <i class="fab fa-facebook"></i>

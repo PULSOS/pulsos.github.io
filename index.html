@@ -17,6 +17,12 @@
     <a href="index.html" class="logo-link">
       <img id="logoindex" src="pulsos.png" alt="Logo PULSOS" class="logo" />
     </a>
+
+    <!-- Menú hamburguesa solo visible en móvil -->
+    <button id="btn-menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-es" class="btn-menu">
+      <i class="fas fa-bars"></i>
+    </button>
+
     <ul id="menu-es" class="menu">
       <li><a href="obras.html">Obras</a></li>
       <li><a href="talleres.html">Talleres</a></li>
@@ -71,5 +77,20 @@
 
   <!-- JavaScript -->
   <script src="script.js"></script>
+  <script>
+    // Menú hamburguesa
+    const btnMenu = document.getElementById('btn-menu');
+    const menuEs = document.getElementById('menu-es');
+    const menuEn = document.getElementById('menu-en');
+
+    btnMenu.addEventListener('click', () => {
+      // Alternar menú activo
+      const isOpen = menuEs.classList.toggle('menu-abierto');
+      menuEn.classList.toggle('menu-abierto', isOpen);
+
+      // Actualizar aria-expanded para accesibilidad
+      btnMenu.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
 </body>
 </html>

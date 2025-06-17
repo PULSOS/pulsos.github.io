@@ -24,6 +24,7 @@
       margin-bottom: -10px;
       text-align: center;
     }
+
     .contenido-artista h2 {
       font-family: 'IntroRustG', sans-serif;
       font-size: 1.5rem;
@@ -37,6 +38,7 @@
       max-width: 300px;
       margin: 0 0 20px 40px;
       height: auto;
+      border-radius: 6px;
     }
 
     .contenido-artista p {
@@ -60,31 +62,46 @@
   </style>
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar">
     <a href="index.html" class="logo-link">
       <img id="logoindex" src="pulsos.png" alt="Logo PULSOS" class="logo" />
     </a>
-    <ul class="menu">
+
+    <!-- Botón hamburguesa -->
+    <button id="btn-menu-hamburguesa" aria-label="Menú" aria-expanded="false" aria-controls="menu-es menu-en">
+      <span></span>
+    </button>
+
+    <!-- Menús -->
+    <ul id="menu-es" class="menu">
       <li><a href="obras.html">Obras</a></li>
       <li><a href="talleres.html">Talleres</a></li>
       <li><a href="artistas.html">Artistas</a></li>
     </ul>
+    <ul id="menu-en" class="menu" style="display: none;">
+      <li><a href="obras.html">Performances</a></li>
+      <li><a href="talleres.html">Workshops</a></li>
+      <li><a href="artistas.html">Artists</a></li>
+    </ul>
   </nav>
 
+  <!-- Botón de idioma -->
   <button id="btn-cambiar-idioma">ENGLISH</button>
 
+  <!-- Contenido principal -->
   <div class="background">
     <div class="contenido-artista">
       <h1>DANA CROSA</h1>
       <h2>Argentina</h2>
       <img src="danacrosa.png" alt="Foto de Dana Crosa" />
 
-      <p>Nació en 1992 en Buenos Aires, Argentina. Estudió Artes Escénicas en la EMAD y se diplomó en Corporalidad y Tecno-Narrativas en la UBA.
-        Trabaja como creadora, actriz, dramaturga, guionista y directora en el circuito independiente porteño, enfocándose en obras site-specific y en espacio público.
-        Su trabajo aborda temas como identidad, afectos, memoria urbana, y la relación entre cuerpo y contexto. Ha explorado teatro, performance, cine, poesía, fotografía y música, obteniendo reconocimiento y premios nacionales e internacionales.</p>
+      <p>Nació en 1992 en Buenos Aires, Argentina. Estudió Artes Escénicas en la EMAD y se diplomó en Corporalidad y Tecno-Narrativas en la UBA. Trabaja como creadora, actriz, dramaturga, guionista y directora en el circuito independiente porteño, enfocándose en obras site-specific y en espacio público.</p>
 
+      <p>Su trabajo aborda temas como identidad, afectos, memoria urbana y la relación entre cuerpo y contexto. Ha explorado teatro, performance, cine, poesía, fotografía y música, obteniendo reconocimiento y premios nacionales e internacionales.</p>
     </div>
 
+    <!-- Redes sociales -->
     <div class="social-buttons" style="position: relative; bottom: auto; left: auto;">
       <a href="https://www.facebook.com/pulsos.encuentro" target="_blank" class="social-icon facebook" aria-label="Facebook">
         <i class="fab fa-facebook"></i>
@@ -94,6 +111,7 @@
       </a>
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
       <p>© 2025. PULSOS - Encuentro Internacional de Artes Escénicas. Todos los derechos reservados.</p>
     </footer>

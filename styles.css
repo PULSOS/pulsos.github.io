@@ -11,7 +11,6 @@
     src: url('IntroRustG-Base2Line.otf') format('truetype');
   }
   
-  
   /* ===============================
      ESTILOS GENERALES
   ================================= */
@@ -41,13 +40,12 @@
     box-sizing: border-box;
   }
   
-  
   /* ===============================
      NAVBAR
   ================================= */
   .navbar {
     position: absolute;
-    top: 10px;
+    top: 30px; /* bajamos navbar para centrar mejor en vertical */
     left: 0;
     width: 100%;
     padding: 10px 30px;
@@ -94,7 +92,6 @@
     color: white;
   }
   
-  
   /* ===============================
      BOTÓN DE CAMBIO DE IDIOMA
   ================================= */
@@ -117,7 +114,6 @@
     color: #e3fc0a;
   }
   
-  
   /* ===============================
      CONTENIDO PRINCIPAL CENTRADO
   ================================= */
@@ -128,7 +124,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 60px 20px;
+    padding: 100px 20px 60px; /* más padding arriba para bajar el contenido */
     box-sizing: border-box;
   }
   
@@ -144,22 +140,24 @@
     color: white;
   }
   
-  #proximamente-es, #proximamente-en {
+  #proximamente-es,
+  #proximamente-en {
     font-size: 3rem;
     margin-bottom: 20px;
   }
   
-  #fecha-es, #fecha-en {
+  #fecha-es,
+  #fecha-en {
     font-size: 1.5rem;
     margin-top: 10px;
   }
   
-  #lugar-es, #lugar-en {
+  #lugar-es,
+  #lugar-en {
     font-size: 1.5rem;
     color: #e3fc0a;
     margin-top: 10px;
   }
-  
   
   /* ===============================
      BOTONES DE REDES SOCIALES
@@ -184,7 +182,6 @@
     color: white;
   }
   
-  
   /* ===============================
      FOOTER
   ================================= */
@@ -198,7 +195,6 @@
     font-family: 'Times New Roman', Times, serif;
     z-index: 1000;
   }
-  
   
   /* ===============================
      ESTILOS PARA TALLERES
@@ -246,3 +242,178 @@
     opacity: 1;
   }
   
+  /* ===============================
+     ESTILOS BOTÓN MENÚ HAMBURGUESA (MÓVIL SOLO)
+  ================================= */
+  /* Por defecto oculto para escritorio */
+  #btn-menu-hamburguesa {
+    display: none;
+  }
+
+  /* Mostrar solo en móvil */
+  @media (max-width: 650px) {
+    body {
+      padding-top: 70px; /* espacio extra para navbar si es fijo */
+    }
+  
+    .navbar {
+      padding: 10px 15px;
+      justify-content: space-between;
+    }
+  
+    #logoindex {
+      max-width: 120px;
+    }
+  
+    /* Botón hamburguesa visible solo en móvil */
+    #btn-menu-hamburguesa {
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1100;
+      width: 40px;
+      height: 40px;
+      position: relative;
+    }
+  
+    #btn-menu-hamburguesa span,
+    #btn-menu-hamburguesa span::before,
+    #btn-menu-hamburguesa span::after {
+      display: block;
+      background-color: #e3fc0a;
+      height: 3px;
+      border-radius: 2px;
+      position: absolute;
+      width: 100%;
+      transition: all 0.3s ease;
+    }
+  
+    #btn-menu-hamburguesa span {
+      top: 50%;
+      margin-top: -1.5px;
+    }
+  
+    #btn-menu-hamburguesa span::before {
+      content: "";
+      top: -10px;
+    }
+  
+    #btn-menu-hamburguesa span::after {
+      content: "";
+      top: 10px;
+    }
+  
+    /* Animación botón hamburguesa abierto */
+    #btn-menu-hamburguesa[aria-expanded="true"] span {
+      background-color: transparent;
+    }
+  
+    #btn-menu-hamburguesa[aria-expanded="true"] span::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+  
+    #btn-menu-hamburguesa[aria-expanded="true"] span::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  
+    /* Menú oculto por defecto */
+    .navbar ul {
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.85);
+      position: fixed;
+      top: 60px;
+      right: 0;
+      width: 220px;
+      max-height: calc(100vh - 60px);
+      overflow-y: auto;
+      padding: 15px;
+      gap: 15px;
+      border-radius: 0 0 0 10px;
+      display: none;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    }
+  
+    /* Menú visible cuando está abierto */
+    .navbar ul.menu-abierto {
+      display: flex;
+    }
+  
+    .navbar li a {
+      font-size: 1.3rem;
+      font-weight: normal;
+    }
+  
+    #btn-cambiar-idioma {
+      top: 15px;
+      right: 15px;
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  
+    .background {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+  
+    .contenido-central {
+      padding: 30px 10px;
+    }
+  
+    .social-buttons {
+      margin-top: 30px;
+      gap: 15px;
+    }
+  
+    .social-icon {
+      font-size: 32px;
+    }
+  
+    .footer {
+      font-size: 0.9rem;
+      padding: 15px 10px;
+    }
+  
+    /* Talleres y obras se apilan en columna */
+    .talleres-container,
+    .obras-container {
+      flex-direction: column;
+      gap: 25px;
+    }
+  
+    .taller,
+    .obra {
+      max-width: 100%;
+    }
+  
+    .taller img.taller-img,
+    .obra img.main-img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    /* Textos más legibles en móviles */
+    #proximamente-es,
+    #proximamente-en {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+  
+    #fecha-es,
+    #fecha-en,
+    #lugar-es,
+    #lugar-en {
+      font-size: 1.2rem;
+    }
+  
+    /* Botones reservas más grandes y centrados */
+    .btn-reservas {
+      width: 80%;
+      font-size: 1.3rem;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
