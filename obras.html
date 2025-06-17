@@ -22,7 +22,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      padding-top: 100px; /* espacio para la navbar */
+      padding-top: 100px;
     }
 
     .titulo-obras {
@@ -41,28 +41,24 @@
     }
 
     .obra {
-      position: relative;
       max-width: 300px;
       flex: 1 1 300px;
-      cursor: pointer;
       overflow: hidden;
+      text-align: center;
     }
 
-    .obra img.main-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: opacity 0.3s ease;
-  border-radius: 8px;
-}
+    .imagen-hover-wrapper {
+      position: relative;
+      cursor: pointer;
+    }
 
-.mensaje-obras {
-  margin-top: 60px;
-  font-family: 'EdinguDemo', sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  color: #ffffff;
-}
+    .main-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: opacity 0.3s ease;
+      border-radius: 8px;
+    }
 
     .overlay-text {
       position: absolute;
@@ -79,17 +75,39 @@
       line-height: 1.4;
     }
 
-    .overlay-text span {
-      font-size: 1rem;
-      display: block;
-    }
-
-    .obra:hover .main-img {
+    .imagen-hover-wrapper:hover .main-img {
       opacity: 0.3;
     }
 
-    .obra:hover .overlay-text {
+    .imagen-hover-wrapper:hover .overlay-text {
       opacity: 1;
+    }
+
+    .btn-reservas {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #e3fc0a;
+      color: black;
+      font-family: 'EdinguDemo', sans-serif;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-reservas:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .mensaje-obras {
+      margin-top: 60px;
+      font-family: 'EdinguDemo', sans-serif;
+      font-size: 2rem;
+      text-align: center;
+      color: #ffffff;
     }
 
     @media (max-width: 650px) {
@@ -131,18 +149,19 @@
       <h1 class="titulo-obras">OBRAS 2025</h1>
 
       <div class="obras-container">
-        <!-- Obra: Julián -->
-        <a href="flyer_julián.pdf" target="_blank" class="obra">
-          <img src="julian.jpeg" alt="Julián acerca de Julián" class="main-img" />
-          <div class="overlay-text">INAUGURACIÓN</div>
-        </a>
+        <div class="obra">
+          <div class="imagen-hover-wrapper">
+            <a href="programacion.pdf" target="_blank" class="imagen-link">
+              <img src="julian.jpeg" alt="Julián acerca de Julián" class="main-img" />
+              <div class="overlay-text">INAUGURACIÓN</div>
+            </a>
+          </div>
+          <a href="https://forms.gle/ruchHWTMfGWBUnZJA" targer="blank" class="btn-reservas">RESERVAS</a>
+        </div>
       </div>
 
       <div class="mensaje-obras">
         Programación completa de obras en breve...
-      </div>
-
-       
       </div>
     </div>
   </div>
