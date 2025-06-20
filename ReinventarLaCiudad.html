@@ -18,7 +18,7 @@
 
     .contenido-taller h1 {
       font-family: 'IntroRustG', sans-serif;
-      font-size: 3rem;
+      font-size: 2rem;
       margin-bottom: 20px;
     }
     .contenido-taller h2 {
@@ -67,22 +67,48 @@
     }
 
     .btn-inscripcion {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 25px;
-      font-size: 2rem;
-      font-weight: bold;
-      background-color: #e3fc0a;
-      color: black;
-      text-decoration: none;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #e3fc0a;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
 
-    .btn-inscripcion:hover {
-      background-color: white;
-      color: black;
-    }
+.btn-inscripcion:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-inscripcion .texto-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: black;
+}
+
+.btn-inscripcion .texto-normal {
+  transition: opacity 0.3s ease;
+}
+
+.btn-inscripcion:hover .texto-normal {
+  opacity: 0;
+}
+
+.btn-inscripcion:hover .texto-hover {
+  opacity: 1;
+  font-size: 1.5rem;
+}
+
 
     .enlace-artista {
       color: white;
@@ -148,7 +174,10 @@
         <p>APORTE VOLUNTARIO</p>
       </div>
 
-      <a href="https://forms.gle/Ars8q62xNKHfnpW86" class="btn-inscripcion" target="_blank">INSCRIPCIONES</a>
+      <div class="btn-inscripcion">
+        <span class="texto-normal">INSCRIPCIONES</span>
+        <span class="texto-hover">CUPOS AGOTADOS</span>
+      </div>
     </div>
 
     <!-- Redes sociales -->
